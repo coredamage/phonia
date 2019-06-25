@@ -30,6 +30,8 @@ RS="\033[1;31m"
 YS="\033[1;33m"
 BS="\033[34m"
 
+R="\033[31m"
+
 WHO="$( whoami )"
 
 if [[ "$WHO" != "root" ]]
@@ -41,6 +43,16 @@ echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
 sleep 1
 exit
 fi
+
+sleep 1
+
+cd ~/phonia
+cat banner/banner.txt
+echo
+echo -e ""$R"Uninstalling Phonia Toolkit..."$CE""
+sleep 1
+echo -e ""$R"Uninstalling dependences..."$CE""
+sleep 3
 
 {
 cd
