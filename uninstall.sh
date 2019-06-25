@@ -47,6 +47,7 @@ fi
 sleep 1
 
 cd ~/phonia
+echo
 cat banner/banner.txt
 echo
 echo -e ""$R"Uninstalling Phonia Toolkit..."$CE""
