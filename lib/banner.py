@@ -12,4 +12,4 @@ def banner():
     print("")
     print(" Phonia Toolkit {}".format(__version__))
     print(" Developed by Entynetproject")
-    print("\n")
+    print("")
