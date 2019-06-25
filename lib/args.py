@@ -3,7 +3,7 @@
 import argparse
 from lib.banner import __version__
 
-parser = argparse.ArgumentParser(description="Advanced information gathering toolkit for phone numbers.
+parser = argparse.ArgumentParser(description="Advanced information gathering toolkit for phone numbers.",
                                  usage='%(prog)s -n <number> [options]')
 
 parser.add_argument('-n', '--number', metavar='number', type=str,
