@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
 
+import os
+
 __version__ = 'v1.4'
 
 def banner():
     print("")
-    print("_|_|_|    _|                            _|            ")
-    print("_|    _|  _|_|_|      _|_|    _|_|_|          _|_|_|  ")
-    print("_|_|_|    _|    _|  _|    _|  _|    _|  _|  _|    _|  ")
-    print("_|        _|    _|  _|    _|  _|    _|  _|  _|    _|  ")
-    print("_|        _|    _|    _|_|    _|    _|  _|    _|_|_|  ")
-    print("")
-    print(" Phonia Toolkit {}".format(__version__))
-    print(" Developed by Entynetproject")
+    os.system("cat banner/banner.txt")
     print("")
