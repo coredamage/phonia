@@ -89,7 +89,7 @@
                             The scanner to use
       --recon               Launch custom format reconnaissance
       --no-ansi             Disable colored output
-      -v, --version         Show tool version
+      -v, --version         Show toolkit version
 
 # Phonia toolkit examples
 
