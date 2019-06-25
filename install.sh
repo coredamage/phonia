@@ -51,21 +51,40 @@ chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
+
+read -p $'Select your arch (amd/arm) ' CONF
 sleep 1
-clear
-sleep 1
-echo -e ""$N"Installing dependences..."$C""
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else 
+echo ""$BS"Installing dependences..."$CE""
+pkg update
+pkg install python3
+pkg install python3-pip
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-cp config.example.py config.py
-pip3 install -r requirements.txt
+echo ""$BS"Installing dependences..."$CE""
 else
-cp config.example.py config.py
+echo ""$BS"Installing dependences..."$CE""
 apt-get update
+apt-get install python3
 apt-get install python3-pip
+fi
+fi
+
+cp config.example.py config.py
 pip3 install setuptools
 pip3 install -r requirements.txt
-fi
+
 else
 cd ~
 {
@@ -77,19 +96,37 @@ chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
+
+read -p $'Select your arch (amd/arm) ' CONF
 sleep 1
-clear
-sleep 1
-echo -e ""$N"Installing dependences..."$C""
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else 
+echo ""$BS"Installing dependences..."$CE""
+pkg update
+pkg install python3
+pkg install python3-pip
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-cp config.example.py config.py
-pip3 install -r requirements.txt
+echo ""$BS"Installing dependences..."$CE""
 else
-cp config.example.py config.py
+echo ""$BS"Installing dependences..."$CE""
 apt-get update
+apt-get install python3
 apt-get install python3-pip
+fi
+fi
+
+cp config.example.py config.py
 pip3 install setuptools
 pip3 install -r requirements.txt
-fi
 fi
