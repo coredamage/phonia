@@ -73,7 +73,7 @@
 
     usage: phonia -n <number> [options]
 
-    Advanced information gathering tool for phone numbers.
+    Advanced information gathering toolkit for phone numbers.
     (http://entynetproject.simplesite.com/) version v0.1.0
 
     optional arguments:
