@@ -52,6 +52,8 @@ chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
 
+python3 lib/banner.py
+
 read -p $'Select your arch (amd/arm) ' CONF
 sleep 1
 
@@ -96,6 +98,8 @@ chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
+
+python3 lib/banner.py
 
 read -p $'Select your arch (amd/arm) ' CONF
 sleep 1
