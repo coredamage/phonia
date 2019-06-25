@@ -28,7 +28,7 @@ C="\033[0m"
 CE="\033[0m"
 RS="\033[1;31m"
 YS="\033[1;33m"
-BS="\033[34m"
+BS="-e \033[34m"
 
 R="\033[31m"
 
@@ -51,7 +51,7 @@ cat banner/banner.txt
 echo
 echo -e ""$R"Uninstalling Phonia Toolkit..."$CE""
 sleep 1
-echo -e ""$R"Uninstalling dependences..."$CE""
+echo -e ""$R"Uninstalling installed dependences..."$CE""
 sleep 3
 
 {
