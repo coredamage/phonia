@@ -34,10 +34,9 @@
 
     Name      : Phonia Toolkit
     Developer : Entynetproject
-    Version   : v1.0 (first release)
-    Toolkit   : OSINT (https://osintframework.com/)
+    Version   : v1.4 (phonia-v1.4-dev)
+    Gather    : Phone number information
     Site      : http://entynetproject.simplesite.com/
-    API       : Automate Google API
 
 # About phonia toolkit
 
