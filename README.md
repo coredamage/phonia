@@ -34,7 +34,7 @@
 
     Name      : Phonia Toolkit
     Developer : Entynetproject
-    Version   : v0.1.0 (first release)
+    Version   : v1.0 (first release)
     Toolkit   : OSINT (https://osintframework.com/)
     Site      : http://entynetproject.simplesite.com/
     API       : Automate Google API
@@ -74,7 +74,6 @@
     usage: phonia -n <number> [options]
 
     Advanced information gathering toolkit for phone numbers.
-    (http://entynetproject.simplesite.com/) version v0.1.0
 
     optional arguments:
       -h, --help            show this help message and exit
