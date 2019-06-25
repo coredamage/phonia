@@ -55,6 +55,7 @@ chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
 
+echo
 cat banner/banner.txt
 echo
 read -p $'Select your arch (amd/arm) ' CONF
@@ -102,6 +103,7 @@ chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
 
+echo
 cat banner/banner.txt
 echo
 read -p $'Select your arch (amd/arm) ' CONF
