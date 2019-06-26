@@ -58,6 +58,7 @@ cd ~/phonia
 echo
 cat banner/banner.txt
 echo
+
 read -p $'Select your arch (amd/arm) ' CONF
 sleep 1
 
@@ -87,9 +88,11 @@ apt-get install python3-pip
 fi
 fi
 
+{
 cp config.example.py config.py
 pip3 install setuptools
 pip3 install -r requirements.txt
+} &> /dev/null
 
 else
 cd ~
@@ -106,6 +109,7 @@ cd ~/phonia
 echo
 cat banner/banner.txt
 echo
+
 read -p $'Select your arch (amd/arm) ' CONF
 sleep 1
 
@@ -135,7 +139,10 @@ apt-get install python3-pip
 fi
 fi
 
+{
 cp config.example.py config.py
 pip3 install setuptools
 pip3 install -r requirements.txt
+} &> /dev/null
+
 fi
