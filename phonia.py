@@ -41,9 +41,6 @@ from scanners import ovh
 from scanners.footprints import osintScan
 from scanners import recon
 
-banner()
-
-
 def scanNumber(InputNumber):
     os.system("clear")
     os.system("cat banner/banner.txt")
@@ -83,6 +80,7 @@ def main():
 
     # If any param is passed, execute help command
     if not len(sys.argv) > 1:
+        banner()
         parser.print_help()
         sys.exit()
     elif args.info:
