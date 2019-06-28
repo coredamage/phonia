@@ -54,7 +54,7 @@ chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
-
+sleep 0.5
 echo
 cat banner/banner.txt
 echo
@@ -166,7 +166,7 @@ chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
 cd ~/phonia
 } &> /dev/null
-
+sleep 0.5
 echo
 cat banner/banner.txt
 echo
