@@ -45,9 +45,10 @@ from scanners import recon
 def scanNumber(InputNumber):
     os.system("clear")
     os.system("cat banner/banner.txt")
-    time.sleep(10)
+    print("")
+    time.sleep(3)
     title("[!] ---- Fetching informations for {} ---- [!]".format(formatNumber(InputNumber)))
-    time.sleep(10)
+    time.sleep(5)
 
     number = localscan.scan(InputNumber)
 
