@@ -22,7 +22,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-if [[ "$2" = "-u" || "$2" = "--update" ]]
+if [[ "$1" = "-u" || "$1" = "--update" ]]
 then
 sleep 1
 echo ""$BS"Installing update..."$CE""
