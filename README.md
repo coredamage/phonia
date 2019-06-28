@@ -78,16 +78,17 @@
       -h, --help            show this help message and exit
       -n number, --number number
                             The phone number to scan (E164 or international
-                            format)
+                            format).
       -i input_file, --input input_file
-                            Phone number list to scan (one per line)
+                            Phone number list to scan (one per line).
       -o output_file, --output output_file
-                            Output to save scan results
+                            Output to save scan results.
       -s scanner, --scanner scanner
-                            The scanner to use
-      --recon               Launch custom format reconnaissance
-      --no-ansi             Disable colored output
-      -v, --version         Show toolkit version
+                            The scanner to use.
+      --recon               Launch custom format reconnaissance.
+      --no-ansi             Disable colored output.
+      -u, --update          Update Phonia Toolkit.
+      --info                Show Phonia Toolkit credits.
 
 # Phonia toolkit examples
 
