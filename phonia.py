@@ -41,6 +41,8 @@ from scanners import ovh
 from scanners.footprints import osintScan
 from scanners import recon
 
+banner()
+
 
 def scanNumber(InputNumber):
     os.system("clear")
