@@ -80,7 +80,6 @@ def main():
 
     # If any param is passed, execute help command
     if not len(sys.argv) > 1:
-        banner()
         parser.print_help()
         sys.exit()
     elif args.info:
@@ -101,7 +100,6 @@ def main():
         for line in args.input.readlines():
             scanNumber(line)
     else:
-        banner()
         parser.print_help()
         sys.exit()
 
