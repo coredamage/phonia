@@ -66,6 +66,9 @@ def scanNumber(InputNumber):
 
 def main():
     scanners = ['any', 'all', 'numverify', 'ovh', 'footprints']
+    
+    if args.update:
+        os.system("cd && chmod +x phonia/bin/phonia && phonia/bin/phonia -u")
 
     banner()
 
@@ -103,8 +106,6 @@ def main():
     if args.output:
         args.output.close()
         
-    if args.update:
-        os.system("cd && chmod +x phonia/bin/phonia && phonia/bin/phonia -u")
 
     closeBrowser()
 
