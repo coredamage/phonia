@@ -25,6 +25,7 @@
 # dependencies
 import sys
 import signal
+import os
 # lib
 from lib.args import args,parser
 from lib.banner import banner, __version__
@@ -41,6 +42,8 @@ from scanners import recon
 
 
 def scanNumber(InputNumber):
+    os.system("clear")
+    os.system("cat banner/banner.txt")
     title("[!] ---- Fetching informations for {} ---- [!]".format(formatNumber(InputNumber)))
 
     number = localscan.scan(InputNumber)
