@@ -24,10 +24,10 @@ parser.add_argument('--recon', action='store_true',
 parser.add_argument('--no-ansi', action='store_true',
                     help='Disable colored output.')
 
-parser.add_argument('-v', '--version', action='store_true',
-                    help='Show Phonia Toolkit version.')
-
 parser.add_argument('-u', '--update', action='store_true',
                     help='Update Phonia Toolkit.')
+
+parser.add_argument('--info', action='store_true',
+                    help='Show information about Phonia Toolkit.')
 
 args = parser.parse_args()
