@@ -97,7 +97,7 @@
     
 > If you want to start list scan, run
 
-    phonia -i input.txt -o output.txt --no-ansi
+    phonia -i input.txt -o output.txt
     
 > If you want to get number footprints, run
 
