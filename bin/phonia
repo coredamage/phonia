@@ -22,6 +22,25 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+if [[ "$2" = "-u" || "$2" = "--update" ]]
+then
+sleep 1
+echo ""$BS"Installing update..."$CE""
+{
+rm -r ~/phonia
+rm /bin/phonia
+rm /usr/local/bin/phonia
+cd ~
+git clone https://github.com/entynetproject/phonia.git
+cd phonia
+chmod +x install.sh
+./install.sh
+} &> /dev/null
+echo ""$GNS"Successfully updated..."$CE""
+sleep 1
+exit
+fi
+
 cd
 if [[ -d ~/phonia ]]
 then
