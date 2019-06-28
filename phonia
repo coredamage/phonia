@@ -107,7 +107,7 @@ def main():
 
 
 def signal_handler(signal, frame):
-    print('\n[-] You pressed Ctrl+C! Exiting.')
+    print('\n[-] You pressed Ctrl+C! Exiting...')
 
     closeBrowser()
 
