@@ -59,8 +59,10 @@ echo
 cat banner/banner.txt
 echo
 
-read -p $'Select your arch (amd/intel/arm) ' CONF
-sleep 1
+if [[ -f /etc/phonia.d ]]
+then
+
+CONF="$( cat /etc/phonia.d )"
 
 if [[ "$CONF" = "arm" ]]
 then
@@ -101,6 +103,52 @@ apt-get install python3-pip
 fi
 fi
 
+else
+
+read -p $'Select your architecture (amd/intel/arm) ' CONF
+echo "$CONF" >> /etc/phonia.d
+sleep 1
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else 
+echo ""$BS"Installing dependences..."$CE""
+pkg update
+pkg install python3
+pkg install python3-pip
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else
+echo ""$BS"Installing dependences..."$CE""
+apt-get update
+apt-get install python3
+apt-get install python3-pip
+fi
+fi
+
+if [[ "$CONF" = "intel" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else
+echo ""$BS"Installing dependences..."$CE""
+apt-get update
+apt-get install python3
+apt-get install python3-pip
+fi
+fi
+fi
+
 {
 cp config.example.py config.py
 pip3 install setuptools
@@ -123,7 +171,54 @@ echo
 cat banner/banner.txt
 echo
 
-read -p $'Select your arch (amd/intel/arm) ' CONF
+if [[ -f /etc/phonia.d ]]
+then
+
+CONF="$( cat /etc/phonia.d )"
+
+if [[ "$CONF" = "arm" ]]
+then
+if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else 
+echo ""$BS"Installing dependences..."$CE""
+pkg update
+pkg install python3
+pkg install python3-pip
+fi
+fi
+
+if [[ "$CONF" = "amd" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else
+echo ""$BS"Installing dependences..."$CE""
+apt-get update
+apt-get install python3
+apt-get install python3-pip
+fi
+fi
+
+if [[ "$CONF" = "intel" ]]
+then
+if [[ -d /System/Library/CoreServices/Finder.app ]]
+then
+echo ""$BS"Installing dependences..."$CE""
+else
+echo ""$BS"Installing dependences..."$CE""
+apt-get update
+apt-get install python3
+apt-get install python3-pip
+fi
+fi
+
+else
+
+read -p $'Select your architecture (amd/intel/arm) ' CONF
+echo "$CONF" >> /etc/phonia.d
 sleep 1
 
 if [[ "$CONF" = "arm" ]]
@@ -162,6 +257,7 @@ echo ""$BS"Installing dependences..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
+fi
 fi
 fi
 
