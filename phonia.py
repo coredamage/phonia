@@ -80,7 +80,7 @@ def main():
         parser.print_help()
         sys.exit()
     elif args.version:
-        print("Version {}".format(__version__))
+        os.system("cat banner/banner1.txt")
         sys.exit()
 
     if args.output:
