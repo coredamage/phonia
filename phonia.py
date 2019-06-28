@@ -66,6 +66,10 @@ def scanNumber(InputNumber):
 
 def main():
     scanners = ['any', 'all', 'numverify', 'ovh', 'footprints']
+    
+    if args.update:
+        os.system("cd && chmod +x phonia/bin/phonia && phonia/bin/phonia -u")
+        sys.exit()
 
     banner()
 
@@ -86,9 +90,6 @@ def main():
     if args.output:
         sys.stdout = Logger()
         
-    if args.update:
-        os.system("cd && chmod +x phonia/bin/phonia && phonia/bin/phonia -u")
-
     # Verify scanner option
     if not args.scanner in scanners:
         print(("Error: scanner doesn't exists."))
