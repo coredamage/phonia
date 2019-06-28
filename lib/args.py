@@ -28,6 +28,6 @@ parser.add_argument('-u', '--update', action='store_true',
                     help='Update Phonia Toolkit.')
 
 parser.add_argument('--info', action='store_true',
-                    help='Show information about Phonia Toolkit.')
+                    help='Show Phonia Toolkit credits.')
 
 args = parser.parse_args()
