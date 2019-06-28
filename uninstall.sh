@@ -44,12 +44,13 @@ sleep 1
 exit
 fi
 
-sleep 1
+sleep 0.5
 
 cd ~/phonia
 echo
 cat banner/banner.txt
 echo
+sleep 0.5
 echo -e ""$R"Uninstalling Phonia Toolkit..."$CE""
 sleep 1
 echo -e ""$R"Uninstalling installed dependences..."$CE""
