@@ -72,15 +72,12 @@
 
     usage: phonia -n <number> [options]
 
-    Advanced information gathering toolkit for phone numbers.
-
     optional arguments:
       -h, --help            show this help message and exit
       -n number, --number number
-                            The phone number to scan (E164 or international
-                            format).
+                            The phone number to scan.
       -i input_file, --input input_file
-                            Phone number list to scan (one per line).
+                            Phone number list to scan.
       -o output_file, --output output_file
                             Output to save scan results.
       -s scanner, --scanner scanner
