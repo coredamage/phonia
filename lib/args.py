@@ -6,10 +6,10 @@ from lib.banner import __version__
 parser = argparse.ArgumentParser(usage='%(prog)s -n <number> [options]')
 
 parser.add_argument('-n', '--number', metavar='number', type=str,
-                    help='The phone number to scan (E164 or international format).')
+                    help='The phone number to scan.')
 
 parser.add_argument('-i', '--input', metavar="input_file", type=argparse.FileType('r'),
-                    help='Phone number list to scan (one per line).')
+                    help='Phone number list to scan.')
 
 parser.add_argument('-o', '--output', metavar="output_file", type=argparse.FileType('w'),
                     help='Output to save scan results.')
