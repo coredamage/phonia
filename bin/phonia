@@ -49,10 +49,10 @@ then
 sleep 1
 echo ""$BS"Installing update..."$CE""
 {
-rm -r ~/phonia
+rm -r /etc/phonia
 rm /bin/phonia
 rm /usr/local/bin/phonia
-cd ~
+cd /etc
 git clone https://github.com/entynetproject/phonia.git
 cd phonia
 chmod +x install.sh
@@ -63,27 +63,27 @@ sleep 1
 exit
 fi
 
-cd
-if [[ -d ~/phonia ]]
+cd /etc
+if [[ -d /etc/phonia ]]
 then
 {
-cd ~/phonia
+cd /etc/phonia
 } &> /dev/null
-python3 ~/phonia/phonia $1 $2 $3 $4 $5 $6 $7 $8 $9
+python3 /etc/phonia/phonia $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 } &> /dev/null
 if [[ "$ASESR" != "" ]]
 then 
-cd
+cd /etc
 {
 git clone https://github.com/entynetproject/phonia.git
-cd ~/phonia
+cd /etc/phonia
 } &> /dev/null
-python3 ~/phonia/phonia $1 $2 $3 $4 $5 $6 $7 $8 $9
+python3 /etc/phonia/phonia $1 $2 $3 $4 $5 $6 $7 $8 $9
 else
-cd
+cd /etc
 sleep 1
 exit
 fi
