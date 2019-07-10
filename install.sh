@@ -44,15 +44,15 @@ sleep 1
 exit
 fi
 
-if [[ -d ~/phonia ]]
+if [[ -d /etc/phonia ]]
 then
-cd ~/phonia/bin
+cd /etc/phonia/bin
 {
 cp phonia /bin
 cp phonia /usr/local/bin
 chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
-cd ~/phonia
+cd /etc/phonia
 } &> /dev/null
 sleep 0.5
 echo
@@ -156,15 +156,15 @@ pip3 install -r requirements.txt
 } &> /dev/null
 
 else
-cd ~
+cd /etc
 {
 git clone https://github.com/entynetproject/phonia.git
-cd ~/phonia/bin
+cd /etc/phonia/bin
 cp phonia /bin
 cp phonia /usr/local/bin
 chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
-cd ~/phonia
+cd /etc/phonia
 } &> /dev/null
 sleep 0.5
 echo
