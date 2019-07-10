@@ -53,7 +53,7 @@ echo
 sleep 0.5
 echo -e ""$R"Uninstalling Phonia Toolkit..."$CE""
 sleep 1
-echo -e ""$R"Uninstalling installed dependences..."$CE""
+echo -e ""$R"Uninstalling installed dependencies..."$CE""
 sleep 3
 
 {

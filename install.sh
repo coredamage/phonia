@@ -68,9 +68,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 pkg update
 pkg install python3
 pkg install python3-pip
@@ -81,9 +81,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
@@ -94,9 +94,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
@@ -113,9 +113,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 pkg update
 pkg install python3
 pkg install python3-pip
@@ -126,9 +126,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
@@ -139,9 +139,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
@@ -180,9 +180,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 pkg update
 pkg install python3
 pkg install python3-pip
@@ -193,9 +193,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
@@ -206,9 +206,9 @@ if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
@@ -225,9 +225,9 @@ if [[ "$CONF" = "arm" ]]
 then
 if [[ -d /System/Library/CoreServices/SpringBoard.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else 
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 pkg update
 pkg install python3
 pkg install python3-pip
@@ -238,9 +238,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
@@ -251,9 +251,9 @@ if [[ "$CONF" = "amd" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 else
-echo ""$BS"Installing dependences..."$CE""
+echo ""$BS"Installing dependencies..."$CE""
 apt-get update
 apt-get install python3
 apt-get install python3-pip
