@@ -46,7 +46,7 @@ fi
 
 sleep 0.5
 
-cd ~/phonia
+cd /etc/phonia
 echo
 cat banner/banner.txt
 echo
@@ -57,8 +57,7 @@ echo -e ""$R"Uninstalling installed dependencies..."$CE""
 sleep 3
 
 {
-cd
-rm -r phonia
+rm -r /etc/phonia
 rm /bin/phonia
 rm /usr/local/bin/phonia
 } &> /dev/null
