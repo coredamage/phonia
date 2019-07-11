@@ -247,7 +247,7 @@ apt-get install python3-pip
 fi
 fi
 
-if [[ "$CONF" = "amd" ]]
+if [[ "$CONF" = "intel" ]]
 then
 if [[ -d /System/Library/CoreServices/Finder.app ]]
 then
