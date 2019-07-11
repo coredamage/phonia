@@ -44,25 +44,25 @@ sleep 1
 exit
 fi
 
-if [[ -d /etc/phonia ]]
+if [[ -d ~/phonia ]]
 then
-cd /etc/phonia/bin
+cd ~/phonia/bin
 {
 cp phonia /bin
 cp phonia /usr/local/bin
 chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
-cd /etc/phonia
+cd ~/phonia
 } &> /dev/null
 sleep 0.5
 echo
 cat banner/banner.txt
 echo
 
-if [[ -f /etc/phonia.d ]]
+if [[ -f ~/phonia.d ]]
 then
 
-CONF="$( cat /etc/phonia.d )"
+CONF="$( cat ~/phonia.d )"
 
 if [[ "$CONF" = "arm" ]]
 then
@@ -106,7 +106,7 @@ fi
 else
 
 read -p $'Select your architecture (amd/intel/arm) ' CONF
-echo "$CONF" >> /etc/phonia.d
+echo "$CONF" >> ~/phonia.d
 sleep 1
 
 if [[ "$CONF" = "arm" ]]
@@ -156,25 +156,25 @@ pip3 install -r requirements.txt
 } &> /dev/null
 
 else
-cd /etc
+cd ~
 {
 git clone https://github.com/entynetproject/phonia.git
-cd /etc/phonia/bin
+cd ~/phonia/bin
 cp phonia /bin
 cp phonia /usr/local/bin
 chmod +x /bin/phonia
 chmod +x /usr/local/bin/phonia
-cd /etc/phonia
+cd ~/phonia
 } &> /dev/null
 sleep 0.5
 echo
 cat banner/banner.txt
 echo
 
-if [[ -f /etc/phonia.d ]]
+if [[ -f ~/phonia.d ]]
 then
 
-CONF="$( cat /etc/phonia.d )"
+CONF="$( cat ~/phonia.d )"
 
 if [[ "$CONF" = "arm" ]]
 then
@@ -218,7 +218,7 @@ fi
 else
 
 read -p $'Select your architecture (amd/intel/arm) ' CONF
-echo "$CONF" >> /etc/phonia.d
+echo "$CONF" >> ~/phonia.d
 sleep 1
 
 if [[ "$CONF" = "arm" ]]
